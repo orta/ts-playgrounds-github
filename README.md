@@ -8,7 +8,7 @@ A Chromium based extension for sending code to the TypeScript playground.
 
 ## Get it
 
-From [the releases page](https://github.com/orta/ts-playgrounds-github/releases)
+From [Chrome App Store](https://chrome.google.com/webstore/detail/github-code-blocks-to-typ/ghfbedglkdlaefbpdammobffadckmjaa/related) (EZ) and [the releases page](https://github.com/orta/ts-playgrounds-github/releases) (less EZ)
 
 ## Dev Setup
 
