@@ -4,6 +4,8 @@ A Chromium or Safari extension for sending code to the TypeScript playground.
 
 ![](screenshots/comments.png)
 
+![](screenshots/safari.png)
+
 ![](screenshots/files.png)
 
 ## Get it
