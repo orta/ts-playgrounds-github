@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "GitHub Code-blocks to TypeScript Playground",
-  "description": "When browsing GitHub, this extension adds a link to the TypeScript playground to every codeblock that declares itself to be TypeScript",
+  "description": "When browsing GitHub, this extension links to the TypeScript playground from every TypeScript-flavoured codeblock",
   "version": "0.1",
 
   "content_scripts": [
