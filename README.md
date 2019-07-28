@@ -8,17 +8,18 @@ A Chromium or Safari extension for sending code to the TypeScript playground.
 
 ## Get it
 
-From [Chrome App Store](https://chrome.google.com/webstore/detail/github-code-blocks-to-typ/ghfbedglkdlaefbpdammobffadckmjaa/related) (EZ) and [the releases page](https://github.com/orta/ts-playgrounds-github/releases) (less EZ)
+- Chromium: [Chrome App Store](https://chrome.google.com/webstore/detail/github-code-blocks-to-typ/ghfbedglkdlaefbpdammobffadckmjaa/related) or [the releases page](https://github.com/orta/ts-playgrounds-github/releases)
+- Safari: [the releases page](https://github.com/orta/ts-playgrounds-github/releases)
 
 ## Dev Setup
 
-```
+```sh
 yarn install
 ```
 
 ## Build
 
-```
+```sh
 yarn build
 ```
 
@@ -26,7 +27,7 @@ yarn build
 
 ### terminal
 
-```
+```sh
 yarn watch
 ```
 
