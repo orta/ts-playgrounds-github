@@ -1,6 +1,6 @@
 # Add Links to TypeScript Playground in GitHub
 
-A Chromium based extension for sending code to the TypeScript playground.
+A Chromium or Safari extension for sending code to the TypeScript playground.
 
 ![](screenshots/comments.png)
 
@@ -32,5 +32,8 @@ yarn watch
 
 ## Load extension to chrome
 
-Open Chome/Edge/Brave, in the extension settings turn on developer mode, then offer the `dist` directory as an unpacked extension.
+Open Chrome/Edge/Brave, in the extension settings turn on developer mode, then offer the `dist` directory as an unpacked extension.
 
+## Load extension in Safari
+
+open `safari/MiscForSafari/TypeScript Playgrounds.xcodeproj` and have a look around.
