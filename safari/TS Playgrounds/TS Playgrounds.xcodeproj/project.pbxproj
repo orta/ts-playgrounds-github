@@ -19,6 +19,7 @@
 		608450B722EF1DCF00802CE3 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 608450B622EF1DCF00802CE3 /* ToolbarItemIcon.pdf */; };
 		608450BB22EF1DCF00802CE3 /* TS Playgrounds Safari.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 608450A522EF1DCF00802CE3 /* TS Playgrounds Safari.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		608450C122EF1E6200802CE3 /* add-ts-playground-links.js in Resources */ = {isa = PBXBuildFile; fileRef = 608450C022EF1E6200802CE3 /* add-ts-playground-links.js */; };
+		60C7997522EF203800B18E98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C7997422EF203800B18E98 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		608450B622EF1DCF00802CE3 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		608450B822EF1DCF00802CE3 /* TS_Playgrounds_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TS_Playgrounds_Safari.entitlements; sourceTree = "<group>"; };
 		608450C022EF1E6200802CE3 /* add-ts-playground-links.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "add-ts-playground-links.js"; path = "../../../dist/js/add-ts-playground-links.js"; sourceTree = "<group>"; };
+		60C7997322EF203800B18E98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../../../../../System/Volumes/Data/Users/orta/dev/typescript/ts-playgrounds-github/safari/TS Playgrounds/TS Playgrounds/ViewController.h"; sourceTree = "<group>"; };
+		60C7997422EF203800B18E98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../../../../../System/Volumes/Data/Users/orta/dev/typescript/ts-playgrounds-github/safari/TS Playgrounds/TS Playgrounds/ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				6084509822EF1D9B00802CE3 /* Info.plist */,
 				6084509922EF1D9B00802CE3 /* main.m */,
 				6084509B22EF1D9B00802CE3 /* TS_Playgrounds.entitlements */,
+				60C7997322EF203800B18E98 /* ViewController.h */,
+				60C7997422EF203800B18E98 /* ViewController.m */,
 			);
 			path = "TS Playgrounds";
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C7997522EF203800B18E98 /* ViewController.m in Sources */,
 				6084509A22EF1D9B00802CE3 /* main.m in Sources */,
 				6084509222EF1D9A00802CE3 /* AppDelegate.m in Sources */,
 			);
