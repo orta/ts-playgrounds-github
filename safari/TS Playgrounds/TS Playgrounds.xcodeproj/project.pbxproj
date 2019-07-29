@@ -67,8 +67,8 @@
 		608450B622EF1DCF00802CE3 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		608450B822EF1DCF00802CE3 /* TS_Playgrounds_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TS_Playgrounds_Safari.entitlements; sourceTree = "<group>"; };
 		608450C022EF1E6200802CE3 /* add-ts-playground-links.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "add-ts-playground-links.js"; path = "../../../dist/js/add-ts-playground-links.js"; sourceTree = "<group>"; };
-		60C7997322EF203800B18E98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../../../../../System/Volumes/Data/Users/orta/dev/typescript/ts-playgrounds-github/safari/TS Playgrounds/TS Playgrounds/ViewController.h"; sourceTree = "<group>"; };
-		60C7997422EF203800B18E98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../../../../../System/Volumes/Data/Users/orta/dev/typescript/ts-playgrounds-github/safari/TS Playgrounds/TS Playgrounds/ViewController.m"; sourceTree = "<group>"; };
+		60C7997322EF203800B18E98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		60C7997422EF203800B18E98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
