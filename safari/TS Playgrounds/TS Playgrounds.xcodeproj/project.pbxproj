@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6084509222EF1D9A00802CE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6084509122EF1D9A00802CE3 /* AppDelegate.m */; };
+		6084509422EF1D9B00802CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6084509322EF1D9B00802CE3 /* Assets.xcassets */; };
+		6084509722EF1D9B00802CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6084509522EF1D9B00802CE3 /* Main.storyboard */; };
+		6084509A22EF1D9B00802CE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6084509922EF1D9B00802CE3 /* main.m */; };
+		608450A822EF1DCF00802CE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608450A722EF1DCF00802CE3 /* Cocoa.framework */; };
+		608450AC22EF1DCF00802CE3 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 608450AB22EF1DCF00802CE3 /* SafariExtensionHandler.m */; };
+		608450AF22EF1DCF00802CE3 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 608450AE22EF1DCF00802CE3 /* SafariExtensionViewController.m */; };
+		608450B222EF1DCF00802CE3 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608450B022EF1DCF00802CE3 /* SafariExtensionViewController.xib */; };
+		608450B522EF1DCF00802CE3 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 608450B422EF1DCF00802CE3 /* script.js */; };
+		608450B722EF1DCF00802CE3 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 608450B622EF1DCF00802CE3 /* ToolbarItemIcon.pdf */; };
+		608450BB22EF1DCF00802CE3 /* TS Playgrounds Safari.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 608450A522EF1DCF00802CE3 /* TS Playgrounds Safari.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		608450C122EF1E6200802CE3 /* add-ts-playground-links.js in Resources */ = {isa = PBXBuildFile; fileRef = 608450C022EF1E6200802CE3 /* add-ts-playground-links.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		608450B922EF1DCF00802CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6084508522EF1D9A00802CE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608450A422EF1DCF00802CE3;
+			remoteInfo = "TS Playgrounds Safari";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		608450BF22EF1DCF00802CE3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				608450BB22EF1DCF00802CE3 /* TS Playgrounds Safari.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6084508D22EF1D9A00802CE3 /* TS Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TS Playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6084509022EF1D9A00802CE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6084509122EF1D9A00802CE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6084509322EF1D9B00802CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6084509622EF1D9B00802CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6084509822EF1D9B00802CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6084509922EF1D9B00802CE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6084509B22EF1D9B00802CE3 /* TS_Playgrounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TS_Playgrounds.entitlements; sourceTree = "<group>"; };
+		608450A522EF1DCF00802CE3 /* TS Playgrounds Safari.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TS Playgrounds Safari.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		608450A722EF1DCF00802CE3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		608450AA22EF1DCF00802CE3 /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		608450AB22EF1DCF00802CE3 /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		608450AD22EF1DCF00802CE3 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		608450AE22EF1DCF00802CE3 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		608450B122EF1DCF00802CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		608450B322EF1DCF00802CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608450B422EF1DCF00802CE3 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		608450B622EF1DCF00802CE3 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		608450B822EF1DCF00802CE3 /* TS_Playgrounds_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TS_Playgrounds_Safari.entitlements; sourceTree = "<group>"; };
+		608450C022EF1E6200802CE3 /* add-ts-playground-links.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "add-ts-playground-links.js"; path = "../../../dist/js/add-ts-playground-links.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6084508A22EF1D9A00802CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608450A222EF1DCF00802CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608450A822EF1DCF00802CE3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6084508422EF1D9A00802CE3 = {
+			isa = PBXGroup;
+			children = (
+				6084508F22EF1D9A00802CE3 /* TS Playgrounds */,
+				608450A922EF1DCF00802CE3 /* TS Playgrounds Safari */,
+				608450A622EF1DCF00802CE3 /* Frameworks */,
+				6084508E22EF1D9A00802CE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6084508E22EF1D9A00802CE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6084508D22EF1D9A00802CE3 /* TS Playgrounds.app */,
+				608450A522EF1DCF00802CE3 /* TS Playgrounds Safari.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6084508F22EF1D9A00802CE3 /* TS Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				6084509022EF1D9A00802CE3 /* AppDelegate.h */,
+				6084509122EF1D9A00802CE3 /* AppDelegate.m */,
+				6084509322EF1D9B00802CE3 /* Assets.xcassets */,
+				6084509522EF1D9B00802CE3 /* Main.storyboard */,
+				6084509822EF1D9B00802CE3 /* Info.plist */,
+				6084509922EF1D9B00802CE3 /* main.m */,
+				6084509B22EF1D9B00802CE3 /* TS_Playgrounds.entitlements */,
+			);
+			path = "TS Playgrounds";
+			sourceTree = "<group>";
+		};
+		608450A622EF1DCF00802CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				608450A722EF1DCF00802CE3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		608450A922EF1DCF00802CE3 /* TS Playgrounds Safari */ = {
+			isa = PBXGroup;
+			children = (
+				608450AA22EF1DCF00802CE3 /* SafariExtensionHandler.h */,
+				608450AB22EF1DCF00802CE3 /* SafariExtensionHandler.m */,
+				608450AD22EF1DCF00802CE3 /* SafariExtensionViewController.h */,
+				608450AE22EF1DCF00802CE3 /* SafariExtensionViewController.m */,
+				608450B022EF1DCF00802CE3 /* SafariExtensionViewController.xib */,
+				608450B322EF1DCF00802CE3 /* Info.plist */,
+				608450B422EF1DCF00802CE3 /* script.js */,
+				608450C022EF1E6200802CE3 /* add-ts-playground-links.js */,
+				608450B622EF1DCF00802CE3 /* ToolbarItemIcon.pdf */,
+				608450B822EF1DCF00802CE3 /* TS_Playgrounds_Safari.entitlements */,
+			);
+			path = "TS Playgrounds Safari";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6084508C22EF1D9A00802CE3 /* TS Playgrounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6084509E22EF1D9B00802CE3 /* Build configuration list for PBXNativeTarget "TS Playgrounds" */;
+			buildPhases = (
+				6084508922EF1D9A00802CE3 /* Sources */,
+				6084508A22EF1D9A00802CE3 /* Frameworks */,
+				6084508B22EF1D9A00802CE3 /* Resources */,
+				608450BF22EF1DCF00802CE3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608450BA22EF1DCF00802CE3 /* PBXTargetDependency */,
+			);
+			name = "TS Playgrounds";
+			productName = "TS Playgrounds";
+			productReference = 6084508D22EF1D9A00802CE3 /* TS Playgrounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		608450A422EF1DCF00802CE3 /* TS Playgrounds Safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608450BC22EF1DCF00802CE3 /* Build configuration list for PBXNativeTarget "TS Playgrounds Safari" */;
+			buildPhases = (
+				608450A122EF1DCF00802CE3 /* Sources */,
+				608450A222EF1DCF00802CE3 /* Frameworks */,
+				608450A322EF1DCF00802CE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TS Playgrounds Safari";
+			productName = "TS Playgrounds Safari";
+			productReference = 608450A522EF1DCF00802CE3 /* TS Playgrounds Safari.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6084508522EF1D9A00802CE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Orta Therox";
+				TargetAttributes = {
+					6084508C22EF1D9A00802CE3 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					608450A422EF1DCF00802CE3 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 6084508822EF1D9A00802CE3 /* Build configuration list for PBXProject "TS Playgrounds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6084508422EF1D9A00802CE3;
+			productRefGroup = 6084508E22EF1D9A00802CE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6084508C22EF1D9A00802CE3 /* TS Playgrounds */,
+				608450A422EF1DCF00802CE3 /* TS Playgrounds Safari */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6084508B22EF1D9A00802CE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6084509422EF1D9B00802CE3 /* Assets.xcassets in Resources */,
+				6084509722EF1D9B00802CE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608450A322EF1DCF00802CE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608450B722EF1DCF00802CE3 /* ToolbarItemIcon.pdf in Resources */,
+				608450B222EF1DCF00802CE3 /* SafariExtensionViewController.xib in Resources */,
+				608450C122EF1E6200802CE3 /* add-ts-playground-links.js in Resources */,
+				608450B522EF1DCF00802CE3 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6084508922EF1D9A00802CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6084509A22EF1D9B00802CE3 /* main.m in Sources */,
+				6084509222EF1D9A00802CE3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608450A122EF1DCF00802CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608450AF22EF1DCF00802CE3 /* SafariExtensionViewController.m in Sources */,
+				608450AC22EF1DCF00802CE3 /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		608450BA22EF1DCF00802CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 608450A422EF1DCF00802CE3 /* TS Playgrounds Safari */;
+			targetProxy = 608450B922EF1DCF00802CE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6084509522EF1D9B00802CE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6084509622EF1D9B00802CE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		608450B022EF1DCF00802CE3 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608450B122EF1DCF00802CE3 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6084509C22EF1D9B00802CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6084509D22EF1D9B00802CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6084509F22EF1D9B00802CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TS Playgrounds/TS_Playgrounds.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DL8L9H58NG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TS Playgrounds/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "orta.io.TS-Playgrounds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		608450A022EF1D9B00802CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TS Playgrounds/TS_Playgrounds.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DL8L9H58NG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TS Playgrounds/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "orta.io.TS-Playgrounds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		608450BD22EF1DCF00802CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TS Playgrounds Safari/TS_Playgrounds_Safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DL8L9H58NG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TS Playgrounds Safari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "orta.io.TS-Playgrounds.TS-Playgrounds-Safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		608450BE22EF1DCF00802CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TS Playgrounds Safari/TS_Playgrounds_Safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DL8L9H58NG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "TS Playgrounds Safari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "orta.io.TS-Playgrounds.TS-Playgrounds-Safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6084508822EF1D9A00802CE3 /* Build configuration list for PBXProject "TS Playgrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6084509C22EF1D9B00802CE3 /* Debug */,
+				6084509D22EF1D9B00802CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6084509E22EF1D9B00802CE3 /* Build configuration list for PBXNativeTarget "TS Playgrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6084509F22EF1D9B00802CE3 /* Debug */,
+				608450A022EF1D9B00802CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608450BC22EF1DCF00802CE3 /* Build configuration list for PBXNativeTarget "TS Playgrounds Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608450BD22EF1DCF00802CE3 /* Debug */,
+				608450BE22EF1DCF00802CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6084508522EF1D9A00802CE3 /* Project object */;
+}

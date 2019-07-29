@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  MiscForSafari
+//  TS Playgrounds
 //
-//  Created by Orta Therox on 7/28/19.
+//  Created by Orta Therox on 7/29/19.
 //  Copyright © 2019 Orta Therox. All rights reserved.
 //
 
