@@ -39,4 +39,4 @@ Open Chrome/Edge/Brave, in the extension settings turn on developer mode, then o
 
 ## Load extension in Safari
 
-open `safari/MiscForSafari/TypeScript Playgrounds.xcodeproj` and have a look around.
+open `safari/TS Playgrounds/TS Playgrounds.xcodeproj` and have a look around.
