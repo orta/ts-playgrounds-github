@@ -39,7 +39,6 @@ const addLinkToFile = (allMainBlocks: HTMLCollectionOf<Element>) => {
       fetch(newPath)
         .then(res => res.text())
         .then(text => {
-          //   debugger
           window.location.href = "https://www.typescriptlang.org/play/#src=" + encodeURI(text);
         });
     });
@@ -68,7 +67,20 @@ const addLinkToCodeblocksInMarkdown = () => {
   if (allInlineCodeBlocks.length) {
     addLinkToCodeblocks(allInlineCodeBlocks);
   }
-}
+};
+
+const listenToNewComments = () => {
+  const commentsContainer = document.getElementsByClassName("js-discussion")[0];
+
+  if (commentsContainer) {
+    // This will be triggered every time a new comment is added, allowing us
+    // to link new TypeScript blocks as they are created.
+    observer.observe(commentsContainer as Node, {
+      attributes: false,
+      childList: true,
+    });
+  }
+};
 
 setTimeout(() => {
   const mainTSFiles = document.getElementsByClassName("type-typescript");
@@ -77,11 +89,5 @@ setTimeout(() => {
   }
 
   addLinkToCodeblocksInMarkdown();
-
-  // This will be triggered every time a new comment is added, allowing us
-  // to link new TypeScript blocks as they are created.
-  observer.observe(document.getElementsByClassName("js-discussion")[0] as Node, {
-    attributes: false,
-    childList: true,
-  });
+  listenToNewComments();
 }, 300);
