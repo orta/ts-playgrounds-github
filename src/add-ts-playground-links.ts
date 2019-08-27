@@ -47,7 +47,7 @@ const addLinkToFile = (allMainBlocks: HTMLCollectionOf<Element>) => {
   }
 };
 
-const addLinkToCodeblocksInMarkdown = (allCodeBlocks: HTMLCollectionOf<Element>) => {
+const addLinkToCodeblocks = (allCodeBlocks: HTMLCollectionOf<Element>) => {
   for (const block of allCodeBlocks) {
     // @ts-ignore
     // This exists for sure at runtime
@@ -58,14 +58,30 @@ const addLinkToCodeblocksInMarkdown = (allCodeBlocks: HTMLCollectionOf<Element>)
   }
 };
 
+const observer =
+  new MutationObserver((mutations: MutationRecord[]) => {
+    addLinkToCodeblocksInMarkdown()
+  });
+
+const addLinkToCodeblocksInMarkdown = () => {
+  const allInlineCodeBlocks = document.getElementsByClassName("highlight-source-ts");
+  if (allInlineCodeBlocks.length) {
+    addLinkToCodeblocks(allInlineCodeBlocks);
+  }
+}
+
 setTimeout(() => {
   const mainTSFiles = document.getElementsByClassName("type-typescript");
   if (mainTSFiles.length) {
     addLinkToFile(mainTSFiles);
   }
 
-  const allInlineCodeBlocks = document.getElementsByClassName("highlight-source-ts");
-  if (allInlineCodeBlocks.length) {
-    addLinkToCodeblocksInMarkdown(allInlineCodeBlocks);
-  }
+  addLinkToCodeblocksInMarkdown();
+
+  // This will be triggered every time a new comment is added, allowing us
+  // to link new TypeScript blocks as they are created.
+  observer.observe(document.getElementsByClassName("js-discussion")[0] as Node, {
+    attributes: false,
+    childList: true,
+  });
 }, 300);
