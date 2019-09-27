@@ -39,7 +39,6 @@ const addLinkToFile = (allMainBlocks: HTMLCollectionOf<Element>) => {
       fetch(newPath)
         .then(res => res.text())
         .then(text => {
-          //   debugger
           window.location.href = "https://www.typescriptlang.org/play/#src=" + encodeURI(text);
         });
     });
@@ -47,7 +46,7 @@ const addLinkToFile = (allMainBlocks: HTMLCollectionOf<Element>) => {
   }
 };
 
-const addLinkToCodeblocksInMarkdown = (allCodeBlocks: HTMLCollectionOf<Element>) => {
+const addLinkToCodeblocks = (allCodeBlocks: HTMLCollectionOf<Element>) => {
   for (const block of allCodeBlocks) {
     // @ts-ignore
     // This exists for sure at runtime
@@ -58,14 +57,37 @@ const addLinkToCodeblocksInMarkdown = (allCodeBlocks: HTMLCollectionOf<Element>)
   }
 };
 
+const observer =
+  new MutationObserver((mutations: MutationRecord[]) => {
+    addLinkToCodeblocksInMarkdown()
+  });
+
+const addLinkToCodeblocksInMarkdown = () => {
+  const allInlineCodeBlocks = document.getElementsByClassName("highlight-source-ts");
+  if (allInlineCodeBlocks.length) {
+    addLinkToCodeblocks(allInlineCodeBlocks);
+  }
+};
+
+const listenToNewComments = () => {
+  const commentsContainer = document.getElementsByClassName("js-discussion")[0];
+
+  if (commentsContainer) {
+    // This will be triggered every time a new comment is added, allowing us
+    // to link new TypeScript blocks as they are created.
+    observer.observe(commentsContainer as Node, {
+      attributes: false,
+      childList: true,
+    });
+  }
+};
+
 setTimeout(() => {
   const mainTSFiles = document.getElementsByClassName("type-typescript");
   if (mainTSFiles.length) {
     addLinkToFile(mainTSFiles);
   }
 
-  const allInlineCodeBlocks = document.getElementsByClassName("highlight-source-ts");
-  if (allInlineCodeBlocks.length) {
-    addLinkToCodeblocksInMarkdown(allInlineCodeBlocks);
-  }
+  addLinkToCodeblocksInMarkdown();
+  listenToNewComments();
 }, 300);
